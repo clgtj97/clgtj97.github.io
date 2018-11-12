@@ -1,11 +1,103 @@
+
 .App {
   text-align: center;
 }
+ /* Smartphones (portrait and landscape) ----------- */
+ @media only screen
+ and (min-device-width : 320px)
+ and (max-device-width : 480px) {
+ /* STYLES GO HERE */
+ }
+ 
+ 
+ 
+ /* Smartphones (landscape) ----------- */
+ @media only screen
+ and (min-width : 321px) {
+ /* STYLES GO HERE */
+ }
+ 
+ 
+ 
+ /* Smartphones (portrait) ----------- */
+ @media only screen
+ and (max-width : 320px) {
+ /* STYLES GO HERE */
+ }
+ 
+ 
+ 
+ /* iPads (portrait and landscape) ----------- */
+ @media only screen
+ and (min-device-width : 768px)
+ and (max-device-width : 1024px) {
+ /* STYLES GO HERE */
+ }
+ /* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-  z-index: 0;
+
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+
+
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+
+
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+} 
+
+.yb {
+    background-color: #F0E321;
+    color: #474523;
+    border: double #474523 6px;
 }
 
 .App-header {
@@ -17,7 +109,8 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 400%;
+  color:#FDF9ED;
 }
 
 .App-intro {
@@ -35,4 +128,37 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+#box1{
+  height: 150vh;
+  width: 100%;
+  background-image: url(gold.svg);
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+.box{
+  position: absolute;
+  top: 95vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, .8);
+  box-sizing: border-box;
+  box-shadow:0 15px 25px  rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  color:#FDF9ED;
+}
+.box input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FDF9ED;
+    background: #B8921F;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow:0 15px 25px  rgba(0, 0, 0, .5);
 }
